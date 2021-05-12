@@ -4,9 +4,9 @@ def line(katz_deli)
     
   else 
     new_line = katz_deli.collect.with_index(1) do |name, index|
-      id="#{index}. #{name}"
-      return id
-      puts "The line is currently: #{new_line}."
+      return"#{index}. #{name}"
+      
+    puts "The line is currently: #{new_line}."
     end
   end
 end
