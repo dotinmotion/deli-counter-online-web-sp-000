@@ -20,6 +20,6 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     katz_deli.each do |name|
-      katz_deli.unshift
+      katz_deli.shift
   end
 end
