@@ -18,5 +18,3 @@ def take_a_number(katz_deli, index)
   end
 end
 
-def now_serving
-end
