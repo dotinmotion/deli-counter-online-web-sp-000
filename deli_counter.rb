@@ -20,7 +20,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     serving= katz_deli.collect do |name|
-      puts "Currently serving #{name}."
+      puts "Currently serving #{katz_deli.shift}."
       katz_deli.shift
     end
     #puts "Currently serving #{serving}"
