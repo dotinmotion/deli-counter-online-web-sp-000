@@ -4,7 +4,7 @@ def line(katz_deli)
     
   else 
     new_line = katz_deli.collect.with_index(1) do |name, index|
-      return"#{index}. #{name}"
+      "#{index}. #{name}"
     end
     puts "The line is currently: #{new_line.join(' ')}."
   end
