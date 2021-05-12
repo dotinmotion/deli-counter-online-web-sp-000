@@ -11,11 +11,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  if katz_deli.length == 0
-    katz_deli << name
-    new_line = katz_deli.collect.with_index(1) do |name, index|
-      puts "Welcome, #{name}. You are number #{index} in line."
-    end
-  end
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
