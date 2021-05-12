@@ -10,8 +10,9 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  puts "Welcome, #{name}. You are number #{line} in line."
+def take_a_number(katz_deli, index)
+  katz_deli.each_with_index do |name, index|
+    puts "Welcome, #{name}. You are number #{index} in line."
 end
 
 def now_serving
