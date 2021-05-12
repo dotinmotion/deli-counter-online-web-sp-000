@@ -6,8 +6,7 @@ def line(katz_deli)
     new_line = katz_deli.collect.with_index(1) do |name, index|
       return"#{index}. #{name}"
     end
-      
-    puts "The line is currently: #{new_line}."
+    puts "The line is currently: #{new_line.join(' ')}."
   end
 end
 
