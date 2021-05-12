@@ -10,9 +10,10 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, index)
+def take_a_number(katz_deli, name)
   if katz_deli.length == 0
-    katz_deli.collect.with_index(1) do |name, index|
+    katz_deli << name
+    new_line = katz_deli.collect.with_index(1) do |name, index|
       puts "Welcome, #{name}. You are number #{index} in line."
     end
   end
